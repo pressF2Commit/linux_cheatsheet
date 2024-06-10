@@ -1,0 +1,7 @@
+To add the user.name and user.email from global git config;
+git config --global --add user.name "your_username"
+git config --global --add user.email "your_email"
+
+To remove the user.name and user.email from global git config;
+git config --global --unset-all user.name
+git config --global --unset-all user.email
