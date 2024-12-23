@@ -1,0 +1,3 @@
+sudo mkdir -p /run/media/sushant/SteamLibrary   
+sudo mount -t ntfs-3g /dev/nvme0n1p4 /run/media/sushant/SteamLibrary
+
