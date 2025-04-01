@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Dont bother with this.
+# Just install yay and install jdk with <yay -S jdk>
+# Much faster than building the package
+# I had written this script when I was under the impression
+# "Dont install yay. Its just another package manager. It'd be bloat. You already have pacman."
+
 # Clone the JDK repository from AUR
 echo "Cloning the JDK repository..."
 git clone https://aur.archlinux.org/jdk.git
