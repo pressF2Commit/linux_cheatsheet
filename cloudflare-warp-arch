@@ -1,20 +1,16 @@
 #!/bin/bash
 
-# Update the system
-echo "Updating system packages..."
-sudo pacman -Syu --noconfirm
-
 # Install necessary dependencies
 echo "Installing curl and base-devel..."
-sudo pacman -S --noconfirm curl base-devel
+sudo pacman -S curl base-devel
 
 # Install yay (if not already installed)
 echo "Installing yay..."
-sudo pacman -S --noconfirm yay
+sudo pacman -S yay
 
 # Install Cloudflare WARP
 echo "Installing Cloudflare WARP..."
-yay -S --noconfirm cloudflare-warp-bin
+yay -S cloudflare-warp-bin
 
 # Start and enable WARP service
 echo "Starting and enabling Cloudflare WARP service..."
@@ -31,4 +27,4 @@ warp-cli connect
 
 # Check WARP status
 echo "Checking WARP status..."
-warp-cli status#!/bin/bash
+warp-cli status
