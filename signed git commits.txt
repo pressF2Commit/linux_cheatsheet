@@ -11,7 +11,7 @@ gpg --full-generate-key
 ### choose (1) RSA and RSA
 ### set key size to 4096 for security
 ### set expiration date
-### enter your GitHub email when prompter
+### enter your GitHub email when prompted
 ### set a paraphrase
 
 ## find your gpg key id
@@ -24,7 +24,7 @@ gpg --armor --export <gpg_key_id>
 
 ## configure Git to use the gpg key
 git config --global user.signingkey <gpg_key_id>
-git config --global commit.gpgsing true
+git config --global commit.gpgsign true
 
 
 
