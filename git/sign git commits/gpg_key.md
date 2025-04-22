@@ -1,5 +1,3 @@
-# GPG Key
-
 ## install gnupg
 sudo pacman -S gnupg
 
@@ -25,7 +23,3 @@ gpg --armor --export <gpg_key_id>
 ## configure Git to use the gpg key
 git config --global user.signingkey <gpg_key_id>
 git config --global commit.gpgsign true
-
-
-
-# SSH Key (coming soon...)

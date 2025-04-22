@@ -20,8 +20,6 @@ sudo docker-compose down
 # Put down docker containers and delete all volumes
 sudo docker-compose down --rmi all --volumes
 
-
-
 # To verify what containers are up and what are not
 sudo docker ps
 
