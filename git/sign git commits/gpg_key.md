@@ -14,7 +14,7 @@ gpg --full-generate-key
 
 ## find your gpg key id
 gpg --list-secret-keys --keyid-format=long
-### key id is the text after "rsa4096/"
+### for key size 16, keyid is the 16 characters long alphanumeric text after "rsa4096/"
 
 ## export your public key
 gpg --armor --export <gpg_key_id>
