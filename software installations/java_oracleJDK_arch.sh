@@ -6,6 +6,12 @@
 # I had written this script when I was under the impression
 # "Dont install yay. Its just another package manager. It'd be bloat. You already have pacman."
 
+sudo pacman -S yay --noconfirm
+yay -S jdk --noconfirm
+
+exit 0
+# Didn't want to delete the script so exiting here
+
 # Clone the JDK repository from AUR
 echo "Cloning the JDK repository..."
 git clone https://aur.archlinux.org/jdk.git
