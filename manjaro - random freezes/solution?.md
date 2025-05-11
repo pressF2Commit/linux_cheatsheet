@@ -1,3 +1,9 @@
+### dont mind this. it didn't work.\
+heres the original manjaro forum discussion:
+https://forum.manjaro.org/t/ive-almost-gone-crazy-with-the-system-random-freezes/149211/20
+
+### original script
+
 install these
 ```bash
 yay -S disable-c6-systemd
