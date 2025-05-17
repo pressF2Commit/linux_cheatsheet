@@ -41,4 +41,3 @@ docker exec -it <container_id> /bin/bash
 docker exec -it mysql_new mysql -u root -p
 # on the docker container "mysql_new" its executing the command interactively "mysql -u root -p" -> login to the running mysql server with username root and password (enter right after this)
 ```
-
