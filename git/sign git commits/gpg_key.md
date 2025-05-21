@@ -29,8 +29,15 @@ gpg --list-secret-keys --keyid-format=long
 ```
 
 for key size 16, keyid is the 16 characters long alphanumeric text after "rsa4096/"  
-the one in the column labelled "sec" is what we need  
+the one in the column labelled "sec" is what we need: `<gpg_key_id>`
 the one in the column labelled "ssb" is the subkey - not required for our use case
+
+## configure Git to use the gpg key
+
+```bash
+git config --global user.signingkey <gpg_key_id>
+git config --global commit.gpgsign true
+```
 
 ## export your public key
 
@@ -40,9 +47,4 @@ gpg --armor --export <gpg_key_id>
 
 add this key to GitHub -> Settings -> SSH and GPG keys -> New GPG Key
 
-## configure Git to use the gpg key
 
-```bash
-git config --global user.signingkey <gpg_key_id>
-git config --global commit.gpgsign true
-```
