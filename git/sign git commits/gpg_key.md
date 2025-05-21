@@ -29,7 +29,7 @@ gpg --list-secret-keys --keyid-format=long
 ```
 
 for key size 16, keyid is the 16 characters long alphanumeric text after "rsa4096/"  
-the one in the column labelled "sec" is what we need: `<gpg_key_id>`
+the one in the column labelled "sec" is what we need: `<gpg_key_id>`  
 the one in the column labelled "ssb" is the subkey - not required for our use case
 
 ## configure Git to use the gpg key
