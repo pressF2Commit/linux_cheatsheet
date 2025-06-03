@@ -1,3 +1,5 @@
+# User Configuration
+
 ## to add the user.name and user.email from global git config;
 
 ```bash
@@ -12,6 +14,8 @@ git config --global --unset-all user.name
 git config --global --unset-all user.email
 ```
 
+# Git URL Configuration
+
 ## change Remote URL
 
 ```bash
@@ -23,17 +27,25 @@ git remote set-url origin <GIT_URL>
 git remote -v
 ```
 
+# Git Reset
+
 ## undo latest commit
 
 ```bash
-git reset --mixed HEAD~1
+git reset --mixed HEAD~<number_of_commits_to_roll_back>
+# this keeps all staged commits staged and unstaged commits unstaged.
 ```
-
-this keeps all staged commits staged and unstaged commits unstaged  
-you can vary the number after ~ to vary how far back the commit you want to undo
-
-## do not know what this is for.....(pray that you dont ever require this)
 
 ```bash
 git reset --hard <commit_id>
+# do not know what this is for.....(pray that you dont ever require this)
+```
+
+# Git Log
+
+## visual diff summary
+
+```bash
+git log -n <number> --stat
+# shows summary of total additions and removals in the previous <number> number of commits
 ```
